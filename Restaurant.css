@@ -42,17 +42,24 @@ body {
 
 header{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header nav {
     float: right;
-    padding-inline-start: 637px;
-    padding-inline-end: 120px;
+    padding-top: 40px;
+    padding-right: 120px;
+    align-items: center;
 }
 
 header nav ul{
     list-style: none;
     display: flex;
+}
+
+header nav li {
+    list-style: none;
 }
 
 .menu0 {
