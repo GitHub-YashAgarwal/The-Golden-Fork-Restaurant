@@ -48,6 +48,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100px;
 }
 
 header nav {
@@ -60,6 +61,7 @@ header nav {
 header nav ul{
     list-style: none;
     display: flex;
+    position: relative;
 }
 
 header nav li {
@@ -69,38 +71,33 @@ header nav li {
 .menu0 {
     margin-inline: 0px 25px;
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
 }
 
 .MainLinks {
     text-decoration: none;
-    color: white;
 }
 
 li:hover {
-    padding-bottom: 4px;
-    border-bottom-style: solid;
-    border-bottom-width: 3px;
-    color: #deb887;
-    font-style: bold;
+    text-decoration-line: underline;
     text-decoration-color: burlywood;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 10px;
 }
 
-li:active {
+.MainLinks:link {
+    color: white;
+}
+
+.MainLinks:visited {
+    color: white;
+}
+
+.MainLinks:hover {
     color: burlywood;
 }
 
-.offers {
+.MainLinks:active {
     color: burlywood;
-    padding-top: 200px;
-}
-
-.about {
-    color: white;
-    font-size: 70px;
-}
-.about1 {
-    color: white;
 }
 
 .btn input {
@@ -123,9 +120,37 @@ li:active {
     color: burlywood;
 }
 
+.AboutUs {
+    height: 745px;
+    line-height: 745px;
+
+}
+
+.AboutUs2 {
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.offers {
+    color: burlywood;
+    padding-top: 200px;
+}
+
+.about {
+    color: white;
+    font-size: 70px;
+}
+.about1 {
+    color: white;
+}
 .welcome {
     color: burlywood;
-    padding-top: 40px;
+}
+
+.welcome1 {
+    color: burlywood;
+    padding-top: 20px;
 }
 
 .welcome2 {
