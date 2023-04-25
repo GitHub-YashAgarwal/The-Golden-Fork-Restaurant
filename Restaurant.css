@@ -25,11 +25,16 @@ body {
     background-color: #ffffff;
 }
 
+.Home {
+    width: 100%;
+}
+
 .bg {
     background-image: url(https://lh3.googleusercontent.com/drive-viewer/AFGJ81r0X3ELthQ_vn0vpn91yWV45XWahaqECZ4YHeVMPF2XpcV08t3OfCl-DCiBuxpcpcNeHZZUm1Y_06_Us2KunB4rpiJtDA=s1600);
     display: block;
     background-size: cover;
     height: 745px;
+    width:100%
 }
 
 .logo { 
