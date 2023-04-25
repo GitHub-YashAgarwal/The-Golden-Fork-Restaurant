@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
 ::-webkit-scrollbar {
     width : 10px;
     background-color: black;
@@ -23,6 +25,7 @@ html {
 body {
     margin: 0;
     background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
 }
 
 .Home {
@@ -80,6 +83,9 @@ header nav li {
 
 .MainLinks {
     text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 li:hover {
@@ -118,6 +124,7 @@ li:hover {
     margin-top: 35px;
     margin-inline: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
 }
 .btn1:hover {
     background-color: white ;
@@ -242,6 +249,7 @@ li:hover {
     margin-top: 0;
     margin-bottom: 0;
     color: #a5a5a5;
+    font-size: 13px;
 }
 
 .BookATable {
@@ -260,17 +268,17 @@ li:hover {
 .form2 {
     display: inline-flex;
     text-align: left;
-    margin-left: -6%;
 }
 
 .NumberofPeople {
     display: inline-block;
     border-color: darkgray;
-    padding-right: 7%;
+    /* padding-right: 7%; */
 }
 
-.date {
-    padding-right: 7%;
+.date2 {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .date1 {
@@ -278,7 +286,10 @@ li:hover {
     border-style: solid;
     border-width: 1px;
     color: darkgray;
-    padding: 15px 45px;
+    width: 220px;
+    height: 45px;
+    padding-left: 15px;
+    padding-right: 15px;
     text-decoration: none;
     font-size: 15px;
     cursor: pointer;
@@ -302,7 +313,7 @@ li:hover {
 
 .ContactUs {
     width: 100%;
-    background-color: #1a1a1a;
+    background-color: #111111;
     height: 240px;
 }
 
@@ -341,6 +352,11 @@ li:hover {
     padding-top: 15px;
 }
 
+.mailto {
+    text-decoration: none;
+    color: burlywood;
+}
+
 .end {
     background-color: black;
     height: 75px;
@@ -348,5 +364,4 @@ li:hover {
 
 .copyright {
     color: lightgray;
-    font-weight: bold;
 }
