@@ -23,28 +23,66 @@ html {
 }
 
 body {
-    margin: 0;
+    margin: 0px;
     background-color: #ffffff;
     font-family: 'Poppins', sans-serif;
 }
 
-.Home {
-    max-width: 100%;
+.prevent-select{
+    user-select: none;
+    -webkit-user-select: none;
 }
 
-.bg {
-    background-image: url(https://lh3.googleusercontent.com/drive-viewer/AFGJ81r0X3ELthQ_vn0vpn91yWV45XWahaqECZ4YHeVMPF2XpcV08t3OfCl-DCiBuxpcpcNeHZZUm1Y_06_Us2KunB4rpiJtDA=s1600);
-    display: block;
+.main {
+    background-image: url(Background.jpg);
     background-size: cover;
     height: 745px;
-    max-width:100%
+    width:100%;
+    display: flex;
+    flex-direction: column; 
+}
+
+.header {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    height: 100px;
+    background-blend-mode: multiply;
+}
+
+nav{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 .logo { 
-    padding-top: 35px;
+    display: flex;
+    line-height: 4vmin;
     padding-left: 120px;
     color: white;
     height: 25px;
+    width: 50%;
+}
+
+.rightNav {
+    display: flex;
+    float: right;
+    justify-content: end;
+    vertical-align: middle;
+    padding-right: 120px;
+    width: 50%;
+}
+
+.rightNav ul{
+    list-style: none;
+    display: flex;
+    position: relative;
 }
 
 .Link {
@@ -52,32 +90,8 @@ body {
     color: white;
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
-}
-
-header nav {
-    float: right;
-    padding-top: 40px;
-    padding-right: 120px;
-    align-items: center;
-}
-
-header nav ul{
-    list-style: none;
-    display: flex;
-    position: relative;
-}
-
-header nav li {
-    list-style: none;
-}
-
 .menu0 {
-    margin-inline: 0px 25px;
+    padding: 20px;
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -88,18 +102,13 @@ header nav li {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-li:hover {
+.MainLinks:hover {
     text-decoration-line: underline;
     text-decoration-color: burlywood;
-    text-decoration-thickness: 3px;
     text-underline-offset: 10px;
 }
 
 .MainLinks:link {
-    color: white;
-}
-
-.MainLinks:visited {
     color: white;
 }
 
@@ -111,6 +120,56 @@ li:hover {
     color: burlywood;
 }
 
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 745px;
+    margin-top: -100px;
+}
+
+/* .Home {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+section{
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+section.ViewMenu {
+    height: 500vh;
+} */
+
+.offers {
+    display: flex;
+    justify-content: center;
+    color: burlywood;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 70px;
+}
+.about1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-left: 20%;
+    margin-right: 20%;  
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
 .btn input {
     align-items: center;
     border-style: solid;
@@ -131,7 +190,6 @@ li:hover {
     border-color: white;
     color: burlywood;
 }
-
 .AboutUs {
     line-height: 745px;
     height: 745px;
@@ -142,19 +200,6 @@ li:hover {
     line-height: 1.5;
     display: inline-block;
     vertical-align: middle;
-}
-
-.offers {
-    color: burlywood;
-    padding-top: 200px;
-}
-
-.about {
-    color: white;
-    font-size: 70px;
-}
-.about1 {
-    color: white;
 }
 .welcome {
     color: burlywood;
@@ -199,8 +244,8 @@ li:hover {
 }
 
 .ViewMenu {
-    height: 1120px;
-    line-height: 1120px;
+    height: 1250px;
+    line-height: 1250px;
     text-align: center;
     width: 100%;
 }
@@ -215,10 +260,8 @@ li:hover {
     padding-bottom: 16px;
     border-bottom: 1px dashed #d8d8d8;
     margin-bottom: 20px;
-    overflow: hidden;
-    position: relative;
-    box-sizing: border-box;
     outline: none;
+    height: 80px;
 }
 
 .dish--title {
@@ -239,10 +282,10 @@ li:hover {
     line-height: 29px;
     color: #bb9356;
     margin-bottom: 0;
-    box-sizing: border-box;
 }
 
 .dish--desc {
+    display: block;
     text-align: left;
     font-weight: 400;
     line-height: 25px;
@@ -250,6 +293,81 @@ li:hover {
     margin-bottom: 0;
     color: #a5a5a5;
     font-size: 13px;
+    width: 270px;
+}
+
+.add-to-cart {
+    background-color: #bb9356;
+    border: solid #bb9356;
+    border-width: 1.5px;
+    border-radius: 5px;
+    height: 30px;
+    width: 90px;
+    padding-left: 7px;
+    padding-right: 7px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    float: right;
+    cursor: pointer;
+    margin-top: -43px;
+    margin-left: 20px;
+    font-size: 10px;
+}
+
+.add-to-cart:hover {
+    box-shadow: 0.25px 0.25px 10px rgb(221, 198, 169) inset;
+}
+
+.changequant{
+    float: right;
+    width: 90px;
+}
+
+.items {
+    background-color: transparent;
+    border: solid #bb9356;
+    border-width: 1.5px;
+    height: 30px;
+    padding-left: 7px;
+    padding-right: 7px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    float: right;
+    cursor: pointer;
+    margin-top: -43px;
+    font-size: 10px;
+    color: #bb9356;
+    text-align: center;
+}
+
+.textbox{
+    text-align: center;
+    height: 26.5px;
+
+}
+
+.text {
+    width: 25px;
+    margin-right: 25px;
+}
+
+.plus {
+    margin-right: 0%;
+    width: 25px;
+}
+
+.sub{
+    margin-right: 65px;
+    width: 25px;
+}
+
+.quant {
+    background-color: #bb9356;
+    color: #ffffff;
+}
+
+.quant:hover {
+    box-shadow: 0.25px 0.25px 10px rgb(221, 198, 169) inset;
 }
 
 .BookATable {
