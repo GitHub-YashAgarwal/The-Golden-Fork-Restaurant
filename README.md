@@ -20,8 +20,9 @@
 <br>
 ![Product Screenshot](https://i.postimg.cc/1zQ5Bqpv/Screenshot-2024-05-03-135328.png)
 
-It is a lightweight online drawing application built using HTML, CSS, and JavaScript, empowered by Fabric.js and Tailwind CSS. With a user-friendly interface and a range of features, It offers a seamless digital canvas for unleashing your creativity.
- ### Built With
+<p align="justify">Welcome to The Golden Fork, where every meal is a masterpiece and every visit is an occasion to savor. Nestled in the heart of the city, our restaurant offers a dining experience like no other, combining exquisite flavors, impeccable service, and a warm, inviting ambiance. From our carefully crafted menus featuring a fusion of international cuisines to our elegant décor and attentive staff, every detail is designed to elevate your dining experience. Whether you're celebrating a special occasion, enjoying a romantic dinner for two, or simply treating yourself to a night out, The Golden Fork promises an unforgettable culinary journey that will tantalize your taste buds and leave you craving more. Join us and discover why we're known as the ultimate destination for discerning food lovers."</p>
+
+### Built With
 
 This project is made using:
 
